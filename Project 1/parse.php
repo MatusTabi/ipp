@@ -175,7 +175,7 @@ if (!strcmp(trim(strtoupper($lang_identifier), "\n"), ".IPPCODE23")) {          
             continue;
         }       
         switch(strtoupper($buffer[0])) {                                        // Hlavny switch case pre kazdu instrukciu
-            case 'POPS':                                                        // (Lepsi a krajsi sposob by bol cez asociativne pole)
+            case 'POPS':                                                      
             case 'DEFVAR':
                 $token->instructionVarFirst($buffer, 1, true);
                 break;
